@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e1e2f, #12121a);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 60px;
+  color: #fff;
+}
+
+.container {
+  width: 400px;
+    background: #1e1e2f;
+    padding: 30px;
+    border-radius: 12px;
+    
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+/* Divider */
+.divider {
+  height: 1px;
+  background: #2a2a40;
+  margin: 20px 0;
+}
+/* Input */
+#todo-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 8px 0 0 8px;
+  background: #2a2a40;
+  color: #fff;
+}
+
+#todo-form button {
+  padding: 12px 16px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#todo-form button:hover {
+  background: #5848e5;
+}
+
+/* List */
+#todo-list {
+  list-style: none;
+}
+
+#todo-list li {
+  background: #2a2a40;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+#todo-list li:hover {
+  transform: scale(1.02);
+}
+
+/* Completed */
+.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+/* checkbox */
+.completed input[type="checkbox"] {
+  accent-color: #6c63ff;
+}
+
+/* Delete button */
+.delete {
+  background: transparent;
+  border: none;
+  color: #ff5c5c;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+}
+
+li:hover .delete {
+  display: block;
+}
+
+/* Footer */
+.footer {
+  margin-top: 15px;
+  background: #2a2a40;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* Filters */
+.filters button {
+  background: transparent;
+  border: 1px solid #aaa;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #aaa;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+
+}
+
+.filters button:hover {
+  color: #fff;
+}
+
+.filters button.active {
+  color: #6c63ff;
+}
+
+/* Clear button */
+#clear-completed {
+  background: transparent;
+  border: 1px solid #ff5c5c;
+  color: #ff5c5c;
+  cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
