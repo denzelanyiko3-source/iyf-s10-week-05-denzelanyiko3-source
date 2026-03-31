@@ -24,12 +24,8 @@ Making my web pages interactive by learning how to select elements, handle event
    Run `npm install` then `npm start`
 
 ## Lessons Learned
+JavaScript really makes the website interactive if the correct elements are used to fulfil user desires.
 
 ## Challenges Faced
+I struggled with handling events.
 
-
-## Screenshots (optional)
-![Screenshot description](path/to/screenshot.png)
-
-## Live Demo (if deployed)
-[View Live Demo](https://your-deployed-url.com)
