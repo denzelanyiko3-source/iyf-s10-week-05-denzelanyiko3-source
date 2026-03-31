@@ -9,12 +9,28 @@
     <div class="container">
         <h1>My To-Do List</h1>
         <div class="divider"></div>
+        
+        <div class="stats">
+            <div class="start-item">
+                <span class="stat-label">ALL:</span>
+                <span class="stat-value" id="totalCount">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Active:</span>
+                <span class="stat-value" id="activeCount">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Completed:</span>
+                <span class="stat-value" id="completedCount">0</span>
+            </div>
+        </div>
+
         <form id="todo-form">
             <input type="text" id="todo-input" placeholder="What needs to be done?" required>
             <button type="submit">Add</button>
         </form>
-        
 
+<div class="divider"></div>
         <div class="filters">
             <button class="filter active" data-filter="all">All</button>
             <button class="filter" data-filter="active">Active</button>
@@ -26,14 +42,16 @@
         <ul id="todo-list">
             <!-- Tasks will be added here -->
         </ul>
-        
-        <div class="stats">
-            <span id="items-left">0 items left</span>
-            <div class="divider"></div>
-            <button id="clear-completed">Clear Completed</button>
+
+        <div class="empty-state" id="emptyState">
+            <p>No tasks added</p>
+        </div>
+
+        <div class="actions">
+            <button id="clearCompletedBtn" class="btn btn-secondary">Clear Completed</button>
         </div>
     </div>
-    
+        
     <script src="main.js"></script>
 </body>
 </html>

@@ -63,6 +63,26 @@ h1 {
 #todo-form button:hover {
   background: #5848e5;
 }
+/*stats*/
+.stats {
+
+}
+
+.stat-item {
+
+
+}
+
+.stat-label {
+
+
+}
+
+.stat-value{
+
+
+}
+
 
 /* List */
 #todo-list {
@@ -128,7 +148,7 @@ li:hover .delete {
   padding: 5px 10px;
   border-radius: 4px;
   color: #aaa;
-  margin-right: 5px;
+  margin: 0 5px;
   cursor: pointer;
   transition: 0.2s;
 
@@ -142,12 +162,73 @@ li:hover .delete {
   color: #6c63ff;
 }
 
+.empty-state{
+  text-align: center;
+  gap: 8px;
+    padding-top: 40px 20px;
+    color: #999;
+    font-size: 14px;
+    display: none;
+}
+
+.empty-state.show {
+    display: block;
+}
+
+
+.actions {
+  display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding-top: 16px;
+}
+
 /* Clear button */
-#clear-completed {
+#clearCompletedBtn {
   background: transparent;
   border: 1px solid #ff5c5c;
   color: #ff5c5c;
   cursor: pointer;
     padding: 5px 10px;
     border-radius: 4px;
+    width: 100%
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    .h1 {
+        font-size: 24px;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .stat-item {
+        justify-content: space-between;
+        padding: 12px;
+        background: white;
+        border: 1px solid #f0f0f0;
+        border-radius: 6px;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .filter-section {
+        flex-wrap: wrap;
+    }
+
+    .filter-btn {
+        flex: 0 1 calc(33.333% - 6px);
+    }
 }
